@@ -12,6 +12,8 @@ react-native run-android
 npm install -g react-native-cli
 
 cd githubfinder
+
 npm install
+
 react-native run-ios
 
