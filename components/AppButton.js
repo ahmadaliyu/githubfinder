@@ -77,11 +77,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 5,
-    // marginVertical: "5%",
   },
 
   eText: {
-    // fontFamily: "",
     color: "#fff",
     lineHeight: 20,
   },

@@ -1,12 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  FlatList,
-  TouchableOpacity,
-} from "react-native";
+import { View, FlatList, TouchableOpacity } from "react-native";
 import AppText from "../components/AppText";
 
 const DisplayOrgsScreen = ({ route, navigation: { goBack } }) => {

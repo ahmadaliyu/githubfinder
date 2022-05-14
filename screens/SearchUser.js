@@ -22,6 +22,7 @@ const SearchUserScreen = ({ navigation: { navigate } }) => {
   const [fetchOrganizations, { isLoading: loadingOrgs, error: error2 }] =
     useFetchOrganizationsMutation();
 
+  //fetch
   const handleSearchRepo = async () => {
     await fetchRepos(username)
       .unwrap()
@@ -38,7 +39,6 @@ const SearchUserScreen = ({ navigation: { navigate } }) => {
       .unwrap()
       .then((res) => {
         navigate(`orgs`, { data: res });
-        console.log(res[0]);
       })
       .catch((err) => {
         console.log(err);
@@ -98,6 +98,7 @@ const SearchUserScreen = ({ navigation: { navigate } }) => {
             <ActivityIndicator size="small" color="#fff" />
           ) : null
         }
+        disabled={username.length === 0}
         width="70%"
         title={
           showAction === "repos"
@@ -114,7 +115,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    // justifyContent: "center",
   },
   textInput: {
     flexDirection: "row",
@@ -136,7 +136,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     marginBottom: "7%",
-    // fontWeight: "bold",
   },
   btnContainer: {
     flexDirection: "row",

@@ -62,7 +62,6 @@ const DisplayReposScreen = ({ route, navigation: { goBack } }) => {
               <AppText
                 style={{ margin: "3%", marginHorizontal: "5%" }}
                 title={"Your Repositories"}
-                // textAlign="center"
                 fontSize={18}
               />
             </View>
