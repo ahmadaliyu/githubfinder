@@ -1,6 +1,9 @@
 # githubfinder
+
 ### Install and run on android
+
 npm install -g react-native-cli
+
 cd githubfinder
 
 npm install
